@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Coverter</title>
+</head>
+<body>
+<p style="font-size: 30px;"><strong>Temperature Converter</strong></p>
+Type a value in the Fahrenheit field to convert the value to Celcius:<br/><br/>
+Fahrenheit
+<input id="doF">
+<button onclick="converttoCelcius()">Convert</button>
+<p id="result"></p>
+<script>
+    let doF = Number(document.getElementById("doF").value);
+
+    function converttoCelcius(){
+        let Celcius;
+        let doF = Number(document.getElementById("doF").value);
+        Celcius = (doF-32)/1.8;
+        document.getElementById("result").innerHTML = "Celcius: " + Celcius;
+    }
+</script>
+</body>
+</html>
